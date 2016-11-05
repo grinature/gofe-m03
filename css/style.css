@@ -1,0 +1,240 @@
+body {
+  background-color: rgb(249, 249, 249);
+}
+
+/* Dims : 1060 x 950 */
+.wrapper_core {
+  width: 1060px;
+  padding: 50px 48px 0 45px;
+
+
+  border: 1px solid transparent;
+
+  margin: 0px auto;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Here are the page's HEADER components : a Logo, a Menu ...
+  The Dimensions : Height = 170px;
+*/
+.header {
+/*
+  What is more suitable here ? Using the margin-property for the .header (ie, a inner element)
+  or the padding-top property set for its parent element ?
+  Or, does it depends only from the context ?
+*/
+/* At the moment I use the parent's padding-top property. Here ! */
+/*  margin-top: 50px;  */
+
+  height: 150px;
+  height: 120px; /* Do I need use the CSS Height property here ? */
+}
+
+/* Dims : 144 x 40
+  1) At the moment, this is an image not the text "Fitness"
+*/
+.logo {
+  width: 144px;
+  height: 40px;
+  background-image: url("../img/header-logo-Fitness.png");
+/*  background-position: left top;
+  background-repeat: no-repeat;*/
+
+/*  background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; */
+/*  background: url("../img/header-logo-Fitness.png") no-repeat;*/
+}
+
+/* Dims : H:40px */
+.menu_header {
+  height: 40px;
+  margin-top: 40px;
+  padding: 0px;
+
+
+  color: rgba(255, 255, 255, 1.0);
+  /* !!!!
+    the background looks like a gradiant !!!
+    But now I will use a solid colour !
+  */
+  background-color: rgba(91, 91, 91, 1.0);
+
+  vertical-align: middle;
+/*  font: 14px/30px "Open Sans", Arial, sans-serif;*/
+  font: 14px/1 "Open Sans", Arial, sans-serif;
+/*  font: 14px/14px "Open Sans", Arial, sans-serif;  */
+/*  font: 14px/30px "Open Sans", Arial, sans-serif;*/
+}
+
+.menu_header a {
+  float: left;
+/*  height: 40px;*/
+/*  padding-top: 0px;
+  padding-bottom: 0px;*/
+
+  /* The Menu Item's :
+    a) left padding is 24px
+    b) the Space between Menu Items is 86px
+    c) So, the item's right padding is 64px */
+
+  padding-left: 24px;
+  padding-right: 62px;
+
+/*  border-left: 1px solid transparent;  */
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+  line-height: 40px;
+
+  vertical-align: middle;
+
+  color: rgba(255, 255, 255, 1.0);
+
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1.0);
+}
+
+.menu_header a:hover {
+/*  height: 40px;*/
+  border-left: 1px solid rgba(131, 131, 131, 1.0);
+  border-right: 1px solid rgba(131, 131, 131, 1.0);
+
+  background-color: rgba(64, 64, 64, 1.0);
+}
+
+.wrapper_center {
+  padding-top: 40px;
+}
+
+.wrapper_left {
+  float: left;
+
+  width: 248px;  /* 240px */
+  margin-top: 40px;
+  margin-right: 48px;
+
+}
+
+.menu-01 {
+  width: 238px;
+  border: 1px solid rgba(200, 200, 200, 1.0);
+
+/*  line-height: 40px;*/
+
+/*  color: rgba(200, 200, 200, 1.0);*/
+}
+
+.menu-01 a {
+
+  display: block;
+/*  line-height: 40px;*/
+
+  border-bottom: 1px solid rgba(200, 200, 200, 1.0);
+
+  border-bottom: 1px solid blue;
+
+  color: rgba(101, 99, 99, 1.0);
+
+  font: 13px/40px "Open-Sans", Arial, sans-serif;
+  text-decoration: none;
+
+}
+
+.menu-01 li a:last-child {
+  border-bottom: 1px solid transparent;
+  border-bottom: 4px solid green;
+
+}
+
+.menu-01 a:hover {
+  background-color: rgba(249, 249, 249, 1.0);
+  color: rgba(44, 44, 44, 1.0);
+}
+
+.main {
+  float: left;
+  width: 678px;
+  margin-top: 40px;
+}
+
+/* An item's figure */
+.main  .item_fig {
+  padding: 40px 24px;
+  border: 1px solid rgba(200, 200, 200, 1.0);
+
+  background-color: yellow;
+
+  text-align: center;
+}
+
+/* An item's description */
+.main .item_descr {
+  padding: 40px 24px;
+
+  background-color: orange;
+  color: rgba(44, 44, 44, 1.0);
+
+  font: 13px/21px "Open Sans", Arial, sans-serif;
+  text-align: left;
+
+}
+
+.item_info {
+/*  text-align: center;*/
+}
+
+/* the Footer section */
+
+.footer {
+
+/* I can't set the 'footer' beneath the 'centre' (ie,'left sidebar' and' maincontent')*/
+  float: none;
+  clear: both;
+
+  height: 40px;
+
+  background-color: rgba(225, 225, 225, 1.0);
+}
+
+.menu_footer {
+/*  height: 40px;*/
+  border: 1px solid green;
+
+  background-color: rgba(225, 225, 225, 1.0);
+/*  background-color: brown;*/
+
+/*  line-height: 40px;*/
+  font: 13px/30px "Open Sans", Arial, sans-serif;
+}
+
+.menu_footer a {
+    float: left;
+
+  /* The Menu Item's :
+    a) left padding is 24px
+    b) the Space between Menu Items is 93px
+    c) So, the item's right padding is 69px */
+
+  padding-left: 24px;
+  padding-right: 69px;
+
+  color: rgba(44, 44, 44, 1.0);
+
+  text-decoration: none;
+}
+
+.menu_footer a:nth-child(2) {
+
+  text-decoration: underline;
+}
+
+.copyright {
+  float: right;
+/*  float: left;*/
+  height: 40px;
+  height: 100%;
+
+  vertical-align: middle;
+
+  background-color: cyan;
+}

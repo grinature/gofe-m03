@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tets for Boxing midek</title>
+  <link rel="stylesheet" href="css/reset.css">
+<!--  <link rel="stylesheet" href="css/style.css">-->
+  <style>
+    body {
+      background-color: yellow;
+    }
+
+    .container {
+
+      width: 944px;
+/*      height: 200px;*/
+      padding: 7px;
+/*      border: 1px solid red;*/
+/*      margin: 0 100px;*/
+      margin: 0 auto;
+
+      background-color: green;
+      color: white;
+
+      line-height: 1.4;
+
+      vertical-align: bottom;
+    }
+
+
+    .container .inl-box {
+      display: inline-block;
+
+      width: 100px;  /* 245 */
+      height: 90px;
+
+      background-color: orange;
+      color: #fff;
+    }
+
+    a.inl-box:hover {
+      color: cyan;
+    }
+
+    .container02 {
+
+      width: 944px;
+/*      height: 140px;*/
+      padding: 0px;
+/*      border: 1px solid red;*/
+/*      margin: 0 100px;*/
+      margin: 0 auto;
+
+      overflow: auto;
+
+      background-color: white;
+      color: red;
+
+      line-height: 1.4;
+
+/*      vertical-align: middle;*/
+
+    }
+
+    .container02 .inl-box {
+            float: left;
+      /*      clear: left;*/
+/*      display: inline-block;*/
+
+      width: 90px;
+      height: 40px;
+      border: 1px solid blue;
+      border-left: 1px solid red;
+
+      margin-right: 0px;
+      margin: 0;
+      margin-top: 40px;
+      margin-left: 0px;
+
+      padding-left: 10px;
+      padding-right: 20px;
+
+      background-color: grey;
+    }
+
+    .container02 .inl-box:first-child {
+      margin-left: 0;
+    }
+    .container02 .inl-box:hover {
+      border-left-color: green;
+      border-right-color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="inl-box">A01 is a inline-block == 1223</a>
+    <a href="#" class="inl-box">A01 is a inline-block == 12345</a>
+    <a href="#" class="inl-box">A01 is a inline-block == 1234567890</a>
+    <a href="#" class="inl-box">A01 is a inline-block == 1234</a>
+    <a href="#" class="inl-box">A01 is a inline-block == 123</a>
+
+  </div>
+  <div class="container02">
+    <a href="#" class="inl-box">A01 is floated == 1223</a>
+    <a href="#" class="inl-box">A01 is floated == 12345</a>
+    <a href="#" class="inl-box">A01 is floated == 1234567890</a>
+    <a href="#" class="inl-box">A01 is floated == 1234</a>
+    <a href="#" class="inl-box">A01 is floated == 123</a>
+
+  </div>
+
+</body>
