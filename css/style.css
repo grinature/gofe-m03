@@ -91,7 +91,7 @@ body {
   color: rgba(255, 255, 255, 1.0);
 
   text-decoration: none;
-  text-shadow: 2px 2px rgba(0, 0, 0, 1.0);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.0);
 }
 
 .menu_header a:hover {
@@ -103,7 +103,8 @@ body {
 }
 
 .wrapper_center {
-  padding-top: 40px;
+/* It's just a test */
+/*  padding-top: 40px;*/
 }
 
 .wrapper_left {
@@ -118,10 +119,19 @@ body {
 .menu-01 {
   width: 238px;
   border: 1px solid rgba(200, 200, 200, 1.0);
-
 /*  line-height: 40px;*/
 
 /*  color: rgba(200, 200, 200, 1.0);*/
+}
+
+.menu-01 li {
+
+  border-bottom: 1px solid rgba(225, 225, 225, 1.0);
+}
+
+.menu-01 li:last-child {
+/*  border-bottom-style: none;*/
+  border-bottom: 0px solid rgba(225, 225, 225, 0);
 }
 
 .menu-01 a {
@@ -129,26 +139,28 @@ body {
   display: block;
 /*  line-height: 40px;*/
 
-  border-bottom: 1px solid rgba(200, 200, 200, 1.0);
+/*  border-bottom: 1px solid rgba(200, 200, 200, 1.0);
 
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid blue;*/
 
   color: rgba(101, 99, 99, 1.0);
 
   font: 13px/40px "Open-Sans", Arial, sans-serif;
   text-decoration: none;
-
+  text-indent: 23px;
 }
 
-.menu-01 li a:last-child {
+/*.menu-01 li a:last-child {
   border-bottom: 1px solid transparent;
   border-bottom: 4px solid green;
 
-}
+}*/
 
 .menu-01 a:hover {
   background-color: rgba(249, 249, 249, 1.0);
   color: rgba(44, 44, 44, 1.0);
+
+  text-indent: 35px;
 }
 
 .main {
