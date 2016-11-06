@@ -238,8 +238,7 @@ body {
   text-decoration: none;
 }
 
-.menu_footer a:nth-child(2) {
-
+.menu_footer a:hover {
   text-decoration: underline;
 }
 
