@@ -2,17 +2,24 @@ body {
   background-color: rgb(249, 249, 249);
 }
 
-/* Dims : 1060 x 950 */
+/* Dims : 1060 {W+P} x 950 */
 .wrapper_core {
-  width: 1060px;
-  padding: 50px 48px 0 45px;
+  width: 966px; /* w = 1060 - 48 - 46 = 966 */
+  padding: 50px 48px 0 46px;
 
 
-  border: 1px solid transparent;
+/*  border: 1px solid transparent; */
 
   margin: 0px auto;
 
   background-color: rgba(255, 255, 255, 1);
+
+/*  box-shadow: -4px 1px 7px -4px rgba(2, 15, 5, 0.51),
+              4px 1px 7px -4px rgba(2, 15, 5, 0.51);*/
+
+  box-shadow: -4px 1px 7px -5px rgba(0, 0, 0, 0.3),
+              4px 1px 7px -5px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Here are the page's HEADER components : a Logo, a Menu ...
@@ -58,6 +65,7 @@ body {
     But now I will use a solid colour !
   */
   background-color: rgba(91, 91, 91, 1.0);
+  background-image: linear-gradient(rgb(94, 94, 94), rgb(68, 67, 67));
 
   vertical-align: middle;
 /*  font: 14px/30px "Open Sans", Arial, sans-serif;*/
@@ -100,6 +108,7 @@ body {
   border-right: 1px solid rgba(131, 131, 131, 1.0);
 
   background-color: rgba(64, 64, 64, 1.0);
+  background-image: linear-gradient(rgb(74, 74, 74), rgb(47, 47, 47));
 }
 
 .wrapper_center {
@@ -110,7 +119,7 @@ body {
 .wrapper_left {
   float: left;
 
-  width: 248px;  /* 240px */
+  width: 240px;  /* 240px */
   margin-top: 40px;
   margin-right: 48px;
 
@@ -174,8 +183,6 @@ body {
   padding: 40px 24px;
   border: 1px solid rgba(200, 200, 200, 1.0);
 
-  background-color: yellow;
-
   text-align: center;
 }
 
@@ -183,7 +190,6 @@ body {
 .main .item_descr {
   padding: 40px 24px;
 
-  background-color: orange;
   color: rgba(44, 44, 44, 1.0);
 
   font: 13px/21px "Open Sans", Arial, sans-serif;
@@ -203,20 +209,17 @@ body {
   float: none;
   clear: both;
 
-  height: 40px;
+/*  height: 40px; */
+  height: 100px;  /* Is it right layout { 100px = 40/menu_footer + 60/bottomWhiteSPACE } ???? */
 
-  background-color: rgba(225, 225, 225, 1.0);
 }
 
 .menu_footer {
-/*  height: 40px;*/
-  border: 1px solid green;
+  height: 40px;
 
   background-color: rgba(225, 225, 225, 1.0);
-/*  background-color: brown;*/
 
-/*  line-height: 40px;*/
-  font: 13px/30px "Open Sans", Arial, sans-serif;
+  font: 13px/40px "Open Sans", Arial, sans-serif;
 }
 
 .menu_footer a {
@@ -242,11 +245,7 @@ body {
 
 .copyright {
   float: right;
-/*  float: left;*/
   height: 40px;
-  height: 100%;
+  padding-right: 25px;
 
-  vertical-align: middle;
-
-  background-color: cyan;
 }
